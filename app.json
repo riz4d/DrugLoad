@@ -1,0 +1,28 @@
+{
+	"name": "DrugLoad",
+	"description": "A telegram bot to retrieve drug data",
+	"repository": "https://github.com/riz4d/DrugLoad",
+        "env": {
+        "API_ID": 
+        {
+            "description": "Get this value from https://my.telegram.org", 
+            "required": true
+        },
+        "API_HASH": 
+        {
+            "description": "Get this value from https://my.telegram.org" ,
+            "required": true
+        },
+        "BOT_TOKEN": 
+        {
+            "description": "Get Bot Token From BotFather Bot",
+            "required": true
+        }
+  },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
