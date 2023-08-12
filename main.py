@@ -1,10 +1,25 @@
 import requests as req
 from pyrogram import *
-from Config import *
+import Config
 from Const import *
+import os
 
 
-
+if Config.BOT_TOKEN == "":
+    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+else:
+    BOT_TOKEN = Config.BOT_TOKEN
+        
+if Config.API_ID=="":
+    API_ID = int(os.environ.get("API_ID"))
+else:
+    API_ID = int(Config.API_ID)
+       
+if Config.API_HASH =="":
+    API_HASH = os.environ.get("API_HASH")
+else:
+    API_HASH = Config.API_HASH    
+      
 
 
 bot=Client('DrugLoad',
