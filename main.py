@@ -43,11 +43,11 @@ def resul():
 
 @bot.on_message(filters.command('start'))
 async def strt_msg(client,message):
-    await message.reply('**Hello '+message.from_user.first_name+"❤️**\n\nI'm __Drugload Bot💊__ developed by @rizad,I have a drug database listed by Food and Drug Administration and fetch's the drug data you want.")
+    await message.reply('**Hello '+message.from_user.first_name+"❤️**\n\nI'm __Drugload Bot💊__ developed by @rizad,I can retrieve drug data listed by Food and Drug Administration and fetch's the drug data you want.")
     
 @bot.on_message(filters.command('about'))
 async def strt_msg(client,message):
-    await message.reply("I'm __Drugload Bot💊__ developed by @rizad,I have a drug database listed by Food and Drug Administration and fetch's the drug data you want.if you have further queries chat with my developer")
+    await message.reply("Myself __Drugload Bot💊__ developed by @rizad,I can retrieve drug data listed by Food and Drug Administration and fetch's the drug data you want.if you have further queries chat with my developer")
     
 @bot.on_message(filters.text)
 async def druginfo(client,message):
